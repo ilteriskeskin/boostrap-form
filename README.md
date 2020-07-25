@@ -1,2 +1,2 @@
-# boostrap-form
-Boostrap Form
+# bootstrap-form
+Basic Bootstrap Form
