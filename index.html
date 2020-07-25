@@ -28,22 +28,157 @@
                 <button type="button" class="btn btn-danger">Rezervasyonlarım</button>
             </div>
             <div class="col-md-4">
-                <button type="button" class="btn btn-dark">LOGO</button>
-            </div>
-        </div>
-        
-        <br><br>
-        <!-- Forms -->
-        <div class="form-group row">
-            <label for="inputPassword" class="col-sm-2 col-form-label">Nerden: </label>
-            <div class="col-sm-10">
-                <select class="form-control form-control-sm">
-                    <option>Small select</option>
-                </select>
+                <!-- LOGO -->
             </div>
         </div>
 
+        <br><br>
+        <!-- Forms -->
+        <form>
+            <div class="form-group row">
+                <label for="" class="col-sm-2 col-form-label">Nereden:</label>
+                <div class="col-sm-8">
+                    <select class="custom-select">
+                        <option selected>İl Seçin</option>
+                        <!-- All city for loop -->
+                        <option value="1">Samsun</option>
+                        <option value="2">İzmir</option>
+                        <option value="3">Ankara</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-sm-2 col-form-label">Nereye:</label>
+                <div class="col-sm-8">
+                    <select class="custom-select">
+                        <option selected>İl Seçin</option>
+                        <!-- All city for loop -->
+                        <option value="1">Samsun</option>
+                        <option value="2">İzmir</option>
+                        <option value="3">Ankara</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="">Gidiş Tarihi:</label>
+                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="">Dönüş Tarihi:</label>
+                    <input class="form-control" type="date" value="2011-08-23" id="example-date-input">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-sm-2 col-form-label">Bilet Yönü:</label>
+                <div class="col-sm-8">
+                    <select class="custom-select">
+                        <option selected>Bilet Yönü Seçin</option>
+                        <!-- All value for loop -->
+                        <option value="1">Gidiş-Dönüş</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="">Yolcu Tipi:</label>
+                    <select class="custom-select">
+                        <option selected>Yolcu Tipi Seçin</option>
+                        <!-- All value for loop -->
+                        <option value="1">Yetişkin (+12)</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="">Yolcu Adet:</label>
+                    <input class="form-control" type="number" placeholder="Yolcu Sayısı" id="example-input">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="">Direkt/Aktarma:</label>
+                    <select class="custom-select">
+                        <option selected>Uçuş Tipi Seçin</option>
+                        <!-- All value for loop -->
+                        <option value="1">Direkt Uçuşlar</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="">.</label>
+                    <select class="custom-select">
+                        <option selected>Turkey</option>
+                        <!-- All value for loop -->
+                        <option value="1">Turkey</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="">Gidiş Saat Aralığı:</label>
+                    <select class="custom-select">
+                        <option selected>Saat Aralığı Seçin</option>
+                        <!-- All value for loop -->
+                        <option value="1">13.00</option>
+                        <option value="1">14.00</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="">Dönüş Saat Aralığı:</label>
+                    <select class="custom-select">
+                        <option selected>Saat Aralığı Seçin</option>
+                        <!-- All value for loop -->
+                        <option value="1">13.00</option>
+                        <option value="1">14.00</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="">Firma:</label>
+                    <select class="custom-select">
+                        <option selected>Lütfen Firma Seçin</option>
+                        <!-- All value for loop -->
+                        <option value="1">Türk Hava Yolları</option>
+                        <option value="1">Pegasus</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="">.</label>
+                    <select class="custom-select">
+                        <option selected>ECOFLY</option>
+                        <!-- All value for loop -->
+                        <option value="1">Firma1</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Uçuş Ara</button>
+        </form>
+
+        <br>
+
+        <p style="text-align: center; color: red;">LİSTELENEN UÇAK ALTERNATİFLERİ ARASINDAN, SİSTEM SİZE ARTI/EKSİ 2
+            SAAT ARALIĞINDAKİ EN UYGUN BİLETİ ÖNERMEKTEDİR.</p>
+
+        <div class="row jumbotron">
+            <div class="col">
+                <input class="form-control" type="text" placeholder="Toplam Değer" readonly>
+            </div>
+            <div class="col-md-auto">
+              <button class="btn btn-warning">Teklif Ver</button>
+            </div>
+            <div class="col col-lg-2">
+              <button class="btn btn-success">Sepete Git</button>
+            </div>
+          </div>
     </div>
+
+    <br><br><br>
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
